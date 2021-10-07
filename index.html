@@ -2,9 +2,18 @@
 <html lang="en">
 
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
         <meta charset = "UTF-8">
         <title>CSE110 Lab2</title>
         <link rel="icon" type="image/ico" href="favicon.ico"/>
+        <style>
+            h1{
+                color: pink
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 
 
@@ -13,10 +22,11 @@
             
             <header>
                 <h1>CSE110 Week 1:</h1>
+                <br>
                 <div Class = "myDiv">
-                    <h3><i>The Meeting Minutes</i> is about <span style="color:rgb(255, 0, 0);font-weight:bold">CSE 110</span></h3>
-                    <h3>Date: 2021/10/2</h3>
-                    <h3>Attendance List: people who take CSE 110</h3>
+                    <h3><i>The Meeting Minutes</i> is about <span style="color:hsl(255, 0, 0);font-weight:bold">CSE 110</span></h3>
+                    <h3 style="color:hsl(255,24,0);">Date: 2021/10/2</h3>
+                    <div class="box px">Attendance List: people who take CSE 110</div>
                     <h3>What the meeting will cover: Software Engineering</h3>
                 </div>
                 
@@ -31,7 +41,7 @@
                 <details>
                     <summary>List of things that Software Engineers should do</summary>
                     <ul>
-                        <li>The definition of Software Engineering</li>
+                        <li id="one">The definition of Software Engineering</li>
                         <li>What a Software Engineer should do </li>
                     </ul>
                 </details>
@@ -55,7 +65,7 @@
                 <h2>Miscellaneous Comments:</h2>
                 <ol>
                     <li>The class is awesome! <strong>(Important)</strong></li>
-                    <li>I am totally lost. </li>
+                    <li class="line">I am totally lost. </li>
                     <li>What just happened during lecture???</li>
                     <li>I had a good sleep :)</li>
                 </ol>
@@ -149,5 +159,31 @@
         </footer>
 
     </body>
+
+    <hr>
+
+    <h2>Flex Box</h2>
+
+    <ul class="flex-container">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+    </ul>
+
+    <hr>
+
+    <h2>Grid</h2>
+
+    <ul class="grid">
+        <li class="grid-item1">1</li>
+        <li class="grid-item2">2</li>
+        <li class="grid-item3">3</li>
+    </ul>
+
+    <hr>
+
+    <h2>Responsiveness</h2>
+    <div style="color:white"><strong>This line's background changes with respect to screen width</strong></div>
 
 </html>
